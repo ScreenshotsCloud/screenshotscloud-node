@@ -1,6 +1,6 @@
 {
 	"name": "screenshotscloud",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "ScreenshotsCloud node.js screenshot generator",
 	"main": "src/index.js",
 	"scripts": {
@@ -18,7 +18,7 @@
 		"browser"
 	],
 	"author": "Chris Hutchinson",
-	"license": "ISC",
+	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/ScreenshotsCloud/screenshotscloud-node/issues"
 	},
