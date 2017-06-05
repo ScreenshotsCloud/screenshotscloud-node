@@ -1,7 +1,7 @@
 const ScreenshotsCloud = require('../src/index.js')
 
-const SCREENSHOTSCLOUD_KEY = 'my-key-generated-at-urlk-dot-it';
-const SCREENSHOTSCLOUD_SECRET = 'mysecretstringgeneratedaturlkdotit';
+const SCREENSHOTSCLOUD_KEY = 'my-key-generated-at-screenshots-dot-cloud';
+const SCREENSHOTSCLOUD_SECRET = 'mysecretstringgeneratedatscreenshotsdotcloud';
 
 var assert = require('assert');
 
@@ -46,7 +46,7 @@ describe('screenshotscloud', function() {
 
 			if(!screenshotscloud.screenshotUrl({
 				"url": "maps.google.com"
-			}) == 'https://api.screenshots.cloud/v1/screenshot/my-key-generated-at-urlk-dot-it/6fd9c40f6131c1cd416bad25d975a51a93a9df9e?url=maps.google.com') {
+			}) == 'https://api.screenshots.cloud/v1/screenshot/my-key-generated-at-screenshots-dot-cloud/6fd9c40f6131c1cd416bad25d975a51a93a9df9e?url=maps.google.com') {
 				throw new Error('Should be true.');
 			}
 		});
