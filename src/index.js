@@ -37,7 +37,7 @@ module.exports = function(key, secret, prefix) {
 	const encKey = CryptoJS.enc.Hex.parse(secret.slice(0,32));
 
 	const encryptLoginUsername = (username) => {
-		let encrypted = CryptoJS.AES.encrypt(username, encKey, {
+		var encrypted = CryptoJS.AES.encrypt(username, encKey, {
 			iv: encIv,
 			padding: CryptoJS.pad.ZeroPadding,
 		});
@@ -46,7 +46,7 @@ module.exports = function(key, secret, prefix) {
 	};
 	
 	const encryptLoginPassword = (password) => {
-		let encrypted = CryptoJS.AES.encrypt(password, encKey, {
+		var encrypted = CryptoJS.AES.encrypt(password, encKey, {
 			iv: encIv,
 			padding: CryptoJS.pad.ZeroPadding,
 		});
